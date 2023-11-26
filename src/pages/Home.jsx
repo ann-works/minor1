@@ -14,7 +14,7 @@ const Home = () => {
           <h1>Eco-Friendly</h1>
           <h1>Reusable</h1>
           <h1>Craft Based</h1>
-          <div className="line"></div><br />
+          <div className="line"></div>
           <h2>Carefully made to provide you the best products at your doorsteps</h2>
           <div className="shopnow"><Link className='hc'>SHOP NOW</Link></div>
         </div>

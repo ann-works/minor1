@@ -8,8 +8,8 @@ body{
 }
 a{
     text-decoration: none;
-    color: black;
-    font-size: 3vmin;
+    color: rgb(29, 82, 16);
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -53,7 +53,7 @@ header{
     text-align: center;
 }
 .header-content h2{
-    font-size: 4vmin;
+    font-size: 4vw;
 }
 .line{
     width: 200px;
@@ -71,11 +71,139 @@ header{
 }
 .hc{
     padding: 15px;
-    background-color: rgb(167, 179, 164);
+    background-color: #F1E9DE;
     border-radius: 30px;
     
 }
 .shopnow{
-    position: relative;
-    top: 30px;
+    position: static;
+    margin: 30px 0;
 }
+
+/* for products */
+
+.products h1{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(29, 49, 24);
+}
+.pcol {
+    /* border: 2px solid rgb(29, 82, 16); */
+    display: flex;
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 22%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.pcol:hover {
+    transform: scale(0.9);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(29, 82, 16);
+}
+
+.pcol img {
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    margin: 10px;
+}
+
+.pdesc {
+    text-align: center;
+    margin: 20px 8px;
+}
+
+button {
+    width: auto;
+    background-color: #3E4A1D;
+    padding: 15px;
+    color: #fff;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    width: 50%;
+    transform: scale(1.1);
+}
+
+
+
+
+/* for about us page */
+.container{
+    width: 95%;
+    padding: 10px;
+    position: relative;
+    top: 65px;
+    right: 10px;
+    left: 10px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col1{
+    width: 100%;
+    font-size: 16px;
+}
+.about_card{
+    margin: 15px;
+    padding: 10px;
+}
+.about_card1 img{
+    width: 30%;
+    margin: 20px;
+    float: left;
+}
+.about_card2 img{
+    width: 30%;
+    margin: 20px;
+    float: right;
+}
+.desc1{
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.desc2{
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* mobile devices
+@media only screen and (max-width: 850px){
+    .navbar{
+        height: 80px;
+        width: 50%;
+        display: flex;
+        position: relative;
+    }
+    .navlinks{
+        position: relative;
+    }
+    header{
+        width: 50%;
+    }
+}*/
