@@ -13,9 +13,9 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <section id="contact-us">
-        <h1 className="heading">Contact Us</h1>
-        <div className="container">
+      <section className="contact-us" id="contact-us">
+        <div className="form-container">
+          <div className="con"><h1>Contact Us</h1></div>
           <form>
             <label htmlFor="name">Name: </label>
             <input type="text" id="name" required
@@ -28,13 +28,12 @@ const Contact = () => {
               onChange={(e) => setData({ ...data, email: e.target.value })} />
 
             <label htmlFor="message">Message: </label>
-            <input type="text" id="message" required
+            <textarea name="message" cols="30" rows="10"
               value={data.msg}
-              onChange={(e) => setData({ ...data, msg: e.target.value })} />
+              onChange={(e) => setData({ ...data, msg: e.target.value })}></textarea>
 
             <div className="btns">
               <input type="submit" />
-              <input type="reset" />
             </div>
           </form>
         </div>
