@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const [data, setData] = useState(
@@ -38,6 +39,8 @@ const Contact = () => {
           </form>
         </div>
       </section>
+      <div><br /><br /> <br /></div>
+      <Footer />
     </>
   )
 }

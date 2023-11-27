@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const Products = () => {
     return (
@@ -66,6 +67,8 @@ const Products = () => {
                     </div>
                 </div>
             </section>
+            <div><br /><br /></div>
+            <Footer />
         </>
     )
 }
